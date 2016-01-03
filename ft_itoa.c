@@ -6,7 +6,7 @@
 /*   By: ale-naou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/04 15:02:32 by ale-naou          #+#    #+#             */
-/*   Updated: 2015/12/18 13:34:39 by ale-naou         ###   ########.fr       */
+/*   Updated: 2016/01/03 15:34:41 by ale-naou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char			*ft_itoa(int n)
 
 	i = 0;
 	if (n == -2147483648)
-		return (ft_strcpy(str, "-2147483648"));
+		return (ft_strdup("-2147483648"));
 	size = ft_nbrlen(n);
 	if ((str = (char *)malloc(sizeof(*str) * size + 1)) == NULL)
 		return (NULL);
