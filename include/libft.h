@@ -6,7 +6,7 @@
 /*   By: ale-naou <ale-naou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 17:35:41 by ale-naou          #+#    #+#             */
-/*   Updated: 2015/12/07 15:33:29 by ale-naou         ###   ########.fr       */
+/*   Updated: 2016/01/31 13:01:28 by ale-naou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
+# include <fcntl.h>
+
+# define BUFF_SIZE 16
 
 void	ft_putchar(char c);
 void	ft_putchar_fd(char c, int fd);
@@ -69,5 +72,6 @@ int		ft_strnequ(const char *s1, const char *s2, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+int		ft_get_next_line(int const fd, char **line);
 
 #endif
